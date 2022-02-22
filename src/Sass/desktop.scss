@@ -1,0 +1,41 @@
+// @media only screen and (min-width: 1200px){
+//     @mixin styleText ($fontSize, $fontWeight){
+//         font-size: $fontSize;
+//         font-weight: $fontWeight;
+//     }
+//     h1{
+//         @include styleText(5.6rem,700)
+//         }
+//     h2{
+//        @include styleText(4rem,700 )
+    
+//     }
+//     h3{
+//       @include styleText(3.2rem, 700 )
+    
+//     }
+//     h4{
+//         @include styleText(2.8rem, 700 )
+    
+//     }
+//     h5{
+//         @include styleText(2.4rem, 700 )
+    
+//     }
+//     h6{
+//        @include styleText(1.8rem, 700 )
+    
+//     }
+//     .overline{
+//        @include styleText(1.4rem, 400 )
+    
+//     }
+//     .subtitle{
+//         @include styleText(1.3rem, 700 )
+    
+//     }
+//     .body{
+//         @include styleText(1.5rem, 500 )
+//     }
+   
+//     }

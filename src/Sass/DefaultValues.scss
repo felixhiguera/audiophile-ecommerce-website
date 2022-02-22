@@ -1,0 +1,40 @@
+@import './Variables.scss';
+
+
+
+@mixin buttonStyle($colorText, $backgroundColor){
+    width: 160px;
+    height: 48px;
+    color: $colorText;
+    background-color: $backgroundColor;
+}
+
+.button-dark-orange{
+    @include buttonStyle(white,$dark-orange );
+    :hover{
+        @include buttonStyle(white, $orange )
+    }
+    border: none
+}
+
+
+.button-white{
+    @include buttonStyle(black, $white );
+    :hover{
+        @include buttonStyle(white,black )
+    }
+}
+
+
+.button-shop{
+    width: 57px;
+    height: 18px;
+    color: black;
+    span{
+        color:$dark-orange ;
+    }
+    :hover{
+        color: $dark-orange;
+    }
+}
+

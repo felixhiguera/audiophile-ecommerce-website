@@ -1,0 +1,56 @@
+@import './Variables.scss';
+@import './DefaultValues.scss';
+@import './desktop.scss';
+@import './Home.scss';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
+@mixin styleText ($fontSize, $fontWeight){
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font-family: 'Manrope', sans-serif;
+
+    background-color: $black;
+    h1{
+        font-size: 3.2rem;
+    }
+    
+    h2{
+       @include styleText(4rem,700 )
+    
+    }
+    h3{
+      @include styleText(1.4rem, 700 )
+    
+    }
+    h4{
+        @include styleText(2.8rem, 700 )
+    
+    }
+    h5{
+        @include styleText(2.4rem, 700 )
+    
+    }
+    h6{
+       @include styleText(1.8rem, 700 )
+    
+    }
+    .overline{
+        @include styleText(1.4rem, 400 )
+     
+     }
+     .subtitle{
+         @include styleText(1.3rem, 700 )
+     
+     }
+     .body{
+         @include styleText(1.5rem, 500 )
+     }
+     
+}
+
+ 

@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+.button-dark-orange {
+  width: 160px;
+  height: 48px;
+  color: white;
+  background-color: #D87D4A;
+  border: none;
+}
+.button-dark-orange :hover {
+  width: 160px;
+  height: 48px;
+  color: white;
+  background-color: #fbaf85;
+}
+
+.button-white {
+  width: 160px;
+  height: 48px;
+  color: black;
+  background-color: #FFFFFF;
+}
+.button-white :hover {
+  width: 160px;
+  height: 48px;
+  color: white;
+  background-color: black;
+}
+
+.button-shop {
+  width: 57px;
+  height: 18px;
+  color: black;
+}
+.button-shop span {
+  color: #D87D4A;
+}
+.button-shop :hover {
+  color: #D87D4A;
+}
+
+.home-top-page {
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  background-image: url("../assets/home/mobile/image-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px;
+}
+.home-top-page h3 {
+  color: #f1f1f1;
+}
+.home-top-page h1 {
+  color: #FFFFFF;
+  font-size: 3.6rem;
+}
+.home-top-page p {
+  text-align: center;
+  color: #f1f1f1;
+  padding: 10px;
+}
+
+.home-products {
+  background-color: #FFFFFF;
+}
+.home-products .products {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.home-products .products .main-square {
+  min-width: 330px;
+  width: 100%;
+  height: 284px;
+  display: grid;
+  padding: 20px;
+  align-items: flex-end;
+}
+.home-products .products .main-square .second-square {
+  min-width: 100%;
+  height: 204px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+.home-products .products .main-square .second-square img {
+  position: relative;
+  bottom: 50px;
+  left: 30px;
+  width: 100px;
+  height: 100px;
+}
+.home-products .products .main-square .second-square button {
+  border: none;
+}
+.home-products .products .main-square .second-square button span {
+  color: #fbaf85;
+}
+.home-products .products .main-square .second-square button :hover {
+  color: black;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #000000;
+}
+body h1 {
+  font-size: 3.2rem;
+}
+body h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+body h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+body h4 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+body h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+body h6 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+body .overline {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+body .subtitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+body .body {
+  font-size: 1.5rem;
+  font-weight: 500;
+}

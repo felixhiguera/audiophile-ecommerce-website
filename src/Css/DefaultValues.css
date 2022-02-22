@@ -1,0 +1,38 @@
+.button-dark-orange {
+  width: 160px;
+  height: 48px;
+  color: white;
+  background-color: #D87D4A;
+  border: none;
+}
+.button-dark-orange :hover {
+  width: 160px;
+  height: 48px;
+  color: white;
+  background-color: #fbaf85;
+}
+
+.button-white {
+  width: 160px;
+  height: 48px;
+  color: black;
+  background-color: #FFFFFF;
+}
+.button-white :hover {
+  width: 160px;
+  height: 48px;
+  color: white;
+  background-color: black;
+}
+
+.button-shop {
+  width: 57px;
+  height: 18px;
+  color: black;
+}
+.button-shop span {
+  color: #D87D4A;
+}
+.button-shop :hover {
+  color: #D87D4A;
+}
