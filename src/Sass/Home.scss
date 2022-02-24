@@ -9,6 +9,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 10px;
+   div{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+
     h3{
         color: $gray;
     }
@@ -22,14 +27,20 @@
         color: $gray;
         padding: 10px;
     }
+   }
+    img{
+        display: none;
+    }
 }
 
 .home-products{
-    background-color: $white;
+   
     .products{
+        background-color: $white;
         display: grid;
         grid-template-rows: 1fr 1fr 1fr;
         justify-items: center;
+        padding: 30px 0;
         .main-square{
             min-width: 330px;
             width: 100%;
@@ -37,7 +48,6 @@
             display: grid;
             padding: 20px;
             align-items: flex-end;
-            
             .second-square{
                 min-width: 100%;
                 
@@ -46,7 +56,8 @@
                 justify-content: center;
                 align-items: center;
                 background-color: $gray;
-                
+                margin-bottom: 20px;
+                border-radius: 10px;
                 
                 img{
                     position: relative;
@@ -69,4 +80,269 @@
             }
         }
     }
+}
+.home-cards{
+    background-color: $white;
+    margin: 20px;
+    display: grid;
+    
+    justify-items: center;
+    .orange-card{
+        background-color: $dark-orange;
+        min-width: 280px;
+        width: 100%;
+        height: 600px;
+        padding: 20px;
+        border-radius: 20px;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      .orange-img2{
+        display: none;
+      }
+     div{
+         display: grid;
+         justify-items: center;
+        h2, p{
+            color: white;
+  
+        }
+     }
+      
+    }
+    .gray-card{
+        margin: 20px 0;
+        border-radius: 10px;
+        min-width: 327px;
+        width: 100%;
+        height: 320px;
+        background-image: url('../assets/home/mobile/image-speaker-zx7.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+    }
+    .black-and-yx1-cards{
+        width: 100%;
+        .black-card{
+            min-width: 327px;
+            height: 300px;
+            width: 100%;
+            background-image: url('../assets/home/mobile/image-earphones-yx1.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        .yx1-card{
+            margin: 20px 0;
+    
+            min-width: 327px;
+            height: 300px;
+            width: 100%;
+            background-color: #F1F1F1;
+            border-radius: 10px;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+}
+.bringing-card{
+    margin: 20px;
+    display: grid;
+    grid-gap: 10px;
+    .image1{
+        min-width: 327px;
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+    }
+    .image2{
+        display: none;
+    }
+    .image3{
+        display: none;
+    }
+    
+    h4{
+        span{
+            color: $orange;
+        }
+    }
+}
+.footer{
+
+    background-color: black;
+    .footer-card{
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+    margin: 0 20px;
+    .footer-card-menu{
+        p{
+            color: white;
+        }
+    }
+    p{
+        color: $gray;
+    }
+  .footer-icons{
+      display: flex;
+      justify-content: space-around;
+      i{
+          margin: 10px;
+      }
+  }
+}
+}
+
+@media only screen and (min-width: 768px){
+
+   .home-top-page{
+       background-image: url('../assets/home/tablet/image-header.jpg');
+       background-position: center;
+       background-size: cover;
+       .body{
+           padding: 10px 100px;
+       }
+   }
+   .home-products{
+   
+    .products{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-items: center;
+        padding: 50px 0;
+        .main-square{
+            min-width: 223px;
+            width: 100%;
+            height: 217px;
+          
+        }
+    }
+}
+
+
+.home-cards{
+    .gray-card{
+        background-image: url('../assets/home/tablet/image-speaker-zx7.jpg');
+        justify-content: start;
+        padding-left: 20px;
+    }
+
+}
+.black-and-yx1-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    .yx1-card{
+        align-content: center;
+        h4{
+            margin: 20px 0;
+        }
+    }
+}
+
+.bringing-card{
+    .image1{
+      display: none;
+    }
+    .image2{
+        display:inline;
+        width: 100%;
+        min-width: 689px;
+        height: 300px;
+    }
+    h4{
+        font-size: 4rem;
+        text-align: center;
+    }
+    p{
+        padding: 0 50px;
+    }
+}
+.footer{
+    .footer-card{
+      justify-items: start;
+    }
+    .footer-card-menu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .footer-last-part{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+        .footer-icons{
+            justify-content: space-evenly;
+        }
+    }
+}
+
+}
+
+@media only screen and (min-width: 1440px){
+    .home-top-page{
+        background-image: none;
+        background-color: #191919;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        img{
+            display: inline;
+            width:800px ;
+        }
+        div{
+            display: grid;
+            justify-items: center;
+        }
+    }
+   .home-cards{
+       .orange-card{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           .orange-img1{
+               display: none;
+           }
+           .orange-img2{
+               display: flex;
+               width: 410px;
+               height: 490px;
+           }
+       }
+       .gray-card{
+           background-image: url(../assets/home/desktop/image-speaker-zx7.jpg);
+           padding-left: 100px;
+       }
+   }
+   .bringing-card{
+      .image3{
+          display: flex;
+          border-radius: 20px;
+      }
+      .image2,.image1{
+          display: none;
+      }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+   }
+
+   .footer-card{
+       padding:  40px;
+       
+       
+   }
 }

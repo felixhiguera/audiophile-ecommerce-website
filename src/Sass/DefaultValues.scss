@@ -7,6 +7,8 @@
     height: 48px;
     color: $colorText;
     background-color: $backgroundColor;
+    border: none;
+    
 }
 
 .button-dark-orange{
@@ -14,7 +16,6 @@
     :hover{
         @include buttonStyle(white, $orange )
     }
-    border: none
 }
 
 
@@ -22,6 +23,19 @@
     @include buttonStyle(black, $white );
     :hover{
         @include buttonStyle(white,black )
+    }
+}
+.button-black{
+    @include buttonStyle($white, $black );
+    :hover{
+        @include buttonStyle(black,white )
+    }
+}
+.button-transparent{
+    @include buttonStyle($black, #e7e7e7 );
+    border: black 1px solid;
+    :hover{
+        @include buttonStyle(white,white )
     }
 }
 

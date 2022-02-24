@@ -10,6 +10,7 @@
   height: 48px;
   color: white;
   background-color: #fbaf85;
+  border: none;
 }
 
 .button-white {
@@ -17,12 +18,45 @@
   height: 48px;
   color: black;
   background-color: #FFFFFF;
+  border: none;
 }
 .button-white :hover {
   width: 160px;
   height: 48px;
   color: white;
   background-color: black;
+  border: none;
+}
+
+.button-black {
+  width: 160px;
+  height: 48px;
+  color: #FFFFFF;
+  background-color: #000000;
+  border: none;
+}
+.button-black :hover {
+  width: 160px;
+  height: 48px;
+  color: black;
+  background-color: white;
+  border: none;
+}
+
+.button-transparent {
+  width: 160px;
+  height: 48px;
+  color: #000000;
+  background-color: #e7e7e7;
+  border: none;
+  border: black 1px solid;
+}
+.button-transparent :hover {
+  width: 160px;
+  height: 48px;
+  color: white;
+  background-color: white;
+  border: none;
 }
 
 .button-shop {

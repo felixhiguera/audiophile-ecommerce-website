@@ -2,6 +2,7 @@
 @import './DefaultValues.scss';
 @import './desktop.scss';
 @import './Home.scss';
+@import './Headphones.scss';
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap');
 @mixin styleText ($fontSize, $fontWeight){
     font-size: $fontSize;
@@ -14,9 +15,9 @@ html{
 body{
     font-family: 'Manrope', sans-serif;
 
-    background-color: $black;
     h1{
-        font-size: 3.2rem;
+        @include styleText(5.6rem,700 )
+
     }
     
     h2{

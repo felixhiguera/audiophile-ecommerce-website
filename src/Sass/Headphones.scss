@@ -1,0 +1,44 @@
+
+.headphones-title{
+    min-width: 375px;
+    height: 130px;
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headphones-cards{
+    margin: 20px;
+    .headphone-card{
+        display: grid;
+        justify-items: center;
+        margin: 40px 0;
+        .headphone-card-image{
+            .image2{
+                display: none;
+            }
+            .image3{
+                display: none;
+            }
+            .image1{
+                width: 223px;
+                height: 243px;
+                border-radius: 10px;
+
+            }
+        }
+        .headphone-card-text{
+            display: grid;
+            justify-items: center;
+            h4{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
